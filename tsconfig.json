@@ -1,3 +1,6 @@
+// TypeScript compiler configuration
+// https://nextjs.org/docs/advanced-features/customizing-babel-config
+
 {
   "compilerOptions": {
     "target": "es5",

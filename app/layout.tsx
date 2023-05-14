@@ -1,3 +1,5 @@
+// Layout for all pages
+
 import "../styles/globals.css";
 
 export const metadata = {
