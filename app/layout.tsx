@@ -1,5 +1,6 @@
 // Layout for all pages
 
+import ContextProvider from "./components/ContextProvider";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -14,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ContextProvider>
+          <main>{children}</main>
+        </ContextProvider>
+      </body>
     </html>
   );
 }

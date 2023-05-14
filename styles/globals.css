@@ -3,6 +3,28 @@ https://nextjs.org/docs/app/building-your-application/styling/css-modules#global
 
 /* Tailwind directives
 https://tailwindcss.com/docs/functions-and-directives */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    @apply font-sans;
+    font-size: 1.6rem;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
