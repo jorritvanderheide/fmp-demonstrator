@@ -136,12 +136,14 @@ export default function Home() {
                 onChange={(e) => setStorySetting(e.target.value)}
               />
             </div>
-            <button
-              className="w-min bg-slate-400 p-2"
-              type="submit"
-            >
-              Submit
-            </button>
+            {chapter === 0 && (
+              <button
+                className="w-min bg-slate-400 p-2"
+                type="submit"
+              >
+                Submit
+              </button>
+            )}
           </form>
         </div>
       </div>
