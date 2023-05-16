@@ -12,8 +12,10 @@ export default function ContextProvider({
   const [protagonistName, setProtagonistName] = useState("");
   const [spiDomain, setSpiDomain] = useState("");
   const [storySetting, setStorySetting] = useState("");
-  const [chapter, setChapter] = useState(0);
+  const [chapter, setChapter] = useState(1);
   const [chapterData, setChapterData] = useState([] as any);
+  const [summary, setSummary] = useState("");
+  const [options, setOptions] = useState([]);
 
   const exposed: any = {
     protagonistName,
@@ -26,6 +28,10 @@ export default function ContextProvider({
     setChapter,
     chapterData,
     setChapterData,
+    summary,
+    setSummary,
+    options,
+    setOptions,
   };
 
   return <Context.Provider value={exposed}>{children}</Context.Provider>;
