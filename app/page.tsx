@@ -161,10 +161,10 @@ export default function Home() {
       setChapterData(data.chapterData);
       console.log(data.chapterData);
       let lastSummary = await getSummary(data);
-      let options = await getOptions(data);
       if (lastSummary != undefined) {
         setSummary(summary + lastSummary);
       }
+      let options = await getOptions(data);
       if (options.optionData != undefined) {
         console.log(options.optionData);
         setOptions(options.optionData);
